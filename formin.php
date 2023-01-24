@@ -8,11 +8,12 @@
 </head>
 <body>
     <div class="container">
-       <form class="form" action="index.php" method="POST">
+       <form class="form" action="welcome.php" method="POST">
           <h1 class="Registration">Login</h1>
           <input type="login" name="login" class="form_control" placeholder="Login" required>
           <input type="password" name="password" class="form_control"  placeholder="Password" required>
           <button type="submit" name="button" class="button">Login</button>
+           <button type="submit" name="button" class="button">Log Out</button>
           <a href="index.php">Registraion</a>
         </form>
     </div> 

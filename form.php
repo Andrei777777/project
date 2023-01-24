@@ -12,7 +12,9 @@
        <form class="form" action="index.php" method="POST">
           <h1 class="Registration">Registration</h1>
           <input type="login" name="login" class="form_control" placeholder="Login" required>
-          <input type="password" name="password" class="form_control"  placeholder="Password" required>
+          <input type="hidden" name="action" class="form_control" value="registration" >
+
+           <input type="password" name="password" class="form_control"  placeholder="Password" required>
           <input type="email" name="email"  class="form_control" placeholder="Email" required>
           <button type="submit" name="button" class="button">Register</button>
           <a href="login.php">Login</a>

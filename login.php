@@ -1,14 +1,14 @@
 <?php
 
 session_start();
-require('formin.php');
-require('connect.php');
 
-$login = " ";
-$password = " ";
-$result = " ";
+require ('formin.php');
 
-if (isset($_POST['login']) and isset($_POST['password'])) {
-    $login = $_POST['login'];
-    $password = $_POST['password'];
+
+
+if (isset($_SESSION['login']) && $_SESSION['password'] === true){
+    header("location:welcome.php");
+
 }
+
+
